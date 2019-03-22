@@ -1,0 +1,33 @@
+{
+  "name": "salteen",
+  "version": "0.0.0",
+  "repository": "lukeed/salteen",
+  "description": "WIP",
+  "unpkg": "dist/salteen.min.js",
+  "module": "dist/salteen.mjs",
+  "main": "dist/salteen.js",
+  "license": "MIT",
+  "author": {
+    "name": "Luke Edwards",
+    "email": "luke.edwards05@gmail.com",
+    "url": "lukeed.com"
+  },
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "build": "bundt",
+    "pretest": "npm run build",
+    "test": "tape test/*.js | tap-spec"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+  ],
+  "devDependencies": {
+    "bundt": "^0.1.1",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.1"
+  }
+}
