@@ -1,4 +1,4 @@
-# salteen [![Build Status](https://travis-ci.org/lukeed/salteen.svg?branch=master)](https://travis-ci.org/lukeed/salteen)
+# salteen [![Build Status](https://badgen.now.sh/travis/lukeed/salteen)](https://travis-ci.org/lukeed/salteen)
 
 > A snappy and lightweight (259B) utility to encrypt and decrypt values with salt.
 
