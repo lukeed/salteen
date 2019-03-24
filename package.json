@@ -6,6 +6,7 @@
   "unpkg": "dist/salteen.min.js",
   "module": "dist/salteen.mjs",
   "main": "dist/salteen.js",
+  "types": "salteen.d.ts",
   "license": "MIT",
   "author": {
     "name": "Luke Edwards",
@@ -21,6 +22,7 @@
     "test": "tape test/*.js | tap-spec"
   },
   "files": [
+    "*.d.ts",
     "dist"
   ],
   "keywords": [
