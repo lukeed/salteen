@@ -17,10 +17,10 @@ function reduce(hasher, base, value) {
 	return str;
 }
 
-export function encode(key) {
+export function encrypt(key) {
 	return reduce.bind(reduce, toChars(key), 0);
 }
 
-export function decode(key) {
+export function decrypt(key) {
 	return reduce.bind(reduce, toChars(key), 1);
 }
