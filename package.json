@@ -1,6 +1,6 @@
 {
   "name": "salteen",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "repository": "lukeed/salteen",
   "description": "A snappy and lightweight (259B) utility to encrypt and decrypt values with salt.",
   "unpkg": "dist/salteen.min.js",
