@@ -2,7 +2,7 @@
   "name": "salteen",
   "version": "0.0.0",
   "repository": "lukeed/salteen",
-  "description": "WIP",
+  "description": "A snappy and lightweight (259B) utility to encrypt and decrypt values with salt.",
   "unpkg": "dist/salteen.min.js",
   "module": "dist/salteen.mjs",
   "main": "dist/salteen.js",
@@ -23,7 +23,14 @@
   "files": [
     "dist"
   ],
-  "keywords": [],
+  "keywords": [
+    "encrypt",
+    "decrypt",
+    "hasher",
+    "hashing",
+    "salt",
+    "salting"
+  ],
   "devDependencies": {
     "bundt": "^0.3.0",
     "tap-spec": "^5.0.0",
