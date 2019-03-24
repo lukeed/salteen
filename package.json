@@ -23,11 +23,10 @@
   "files": [
     "dist"
   ],
-  "keywords": [
-  ],
+  "keywords": [],
   "devDependencies": {
-    "bundt": "^0.1.1",
+    "bundt": "^0.3.0",
     "tap-spec": "^5.0.0",
-    "tape": "^4.9.1"
+    "tape": "^4.10.1"
   }
 }
