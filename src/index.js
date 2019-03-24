@@ -6,23 +6,21 @@ function toChars(str) {
 	return arr;
 }
 
-function reduce(arr, value, fn) {
-	var j, tmp, str='', chars=toChars(value);
-	while (tmp = chars.shift()) {
-		for (j=0; j < arr.length; j++) tmp ^= arr[j];
-		str += fn(tmp);
+function reduce(hasher, base, value) {
+	var i=0, j, tmp, str='';
+	var chars = base ? value.match(/.{1,2}/g) : toChars(value);
+	while (i < chars.length) {
+		tmp = base ? parseInt(chars[i++], 16) : chars[i++];
+		for (j=0; j < hasher.length;) tmp ^= hasher[j++];
+		str += base ? String.fromCharCode(tmp) : ('0' + tmp.toString(16)).substr(-2);
 	}
 	return str;
 }
 
-export function encode(key, value) {
-	return reduce(toChars(key), value, function (x) {
-		return ('0' + x.toString(16)).substr(-2);
-	});
+export function encode(key) {
+	return reduce.bind(reduce, toChars(key), 0);
 }
 
-export function decode(key, value) {
-	return reduce(toChars(key), value, function (x) {
-		return String.fromCharCode(x);
-	});
+export function decode(key) {
+	return reduce.bind(reduce, toChars(key), 1);
 }
